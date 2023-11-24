@@ -44,7 +44,7 @@ def create_travel():
 
         return show_json("Udało się dodać nową wycieczkę", 200, True)
     else:
-        return show_json("Odmowa dostępu", 401, False)
+        return show_json("Odmowa dostępu", , False)
 @app.route("/all-travels")
 def all_travels():
      data = db.travels.find({})
